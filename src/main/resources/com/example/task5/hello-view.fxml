@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.task5.IndicatorController">
+    <TextField fx:id="startField" layoutX="10" layoutY="10" promptText="Начало отрезка" />
+    <TextField fx:id="endField" layoutX="150" layoutY="10" promptText="Конец отрезка" />
+    <TextField fx:id="currentField" layoutX="300" layoutY="10" promptText="Текущее значение" />
+    <Button layoutX="450" layoutY="10" text="Создать Индикатор" onAction="#createIndicator" />
+    <Pane fx:id="indicatorPane" layoutX="10" layoutY="50" prefWidth="500" prefHeight="500" />
+    <Label fx:id="statusLabel" layoutX="10" layoutY="260" prefWidth="300" />
+</AnchorPane>
